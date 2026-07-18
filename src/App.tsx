@@ -11,14 +11,14 @@ function App() {
             <a >Products</a>
             <a >Pricing</a>
             <a >Support</a>
+            
           </div>
         </nav>
-        <div className='relative w-[1100px] max-w-[full] mx-auto box-border m-30'>
+        <div className=' relative w-[1100px] max-w-full mx-auto box-border m-30'>
           <img src="/landing.svg" alt="landing" />
           <h1 className='flex items-center justify-center font-medium text-[1.75rem] leading-[1.25] text-[#424242] font-["inter"-serif] '>Invest in everything</h1>
           <p className='flex items-center justify-center font-normal text-[1.25rem] leading-[1.25] text-[#424242] py-2'> Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-          <a href="" className=''>Sign up for free</a>
-          
+          <a href="" className='block w-fit mx-auto  bg-[#387ed1] text-white border border-transparent rounded-[3px] px-[30px] py-[10px] text-center cursor-pointer box-border text-[1.2em] leading-[1.2em]  '>Sign up for free</a> 
         </div>
       </div>
     </>
