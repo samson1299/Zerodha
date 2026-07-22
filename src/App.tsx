@@ -26,19 +26,19 @@ function App() {
               <h3 className='text-[2rem] leading-1.5 font-medium  mb-[40px] text-[#424242]'>Trust with confidence </h3>
             </div>
             <div>
-              <h3>Customer-first always</h3>
-              <p>That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores of equity investments, making us India’s largest broker; contributing to 15% of daily retail exchange volumes in India.</p>
+              <h3 className='text-[25px]'>Customer-first always</h3>
+              <p className ='mt-[5px] mb-8 text-[#666] text-base leading-[1.8]'>That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores of equity investments, making us India’s largest broker; contributing to 15% of daily retail exchange volumes in India.</p>
             </div>
             <div>
-              <h3>No spam or gimmicks</h3>
+              <h3 className='text-[25px]'>No spam or gimmicks</h3>
               <p className="mt-[5px] mb-8 text-[#666] text-base leading-[1.8]">No gimmicks, spam, "gamification", or annoying push notifications. High quality apps that you use at your pace, the way you like.</p>
             </div>
             <div>
-              <h3>The Zerodha universe</h3>
+              <h3 className='text-[25px]'>The Zerodha universe</h3>
               <p className="mt-[5px] mb-8 text-[#666] text-base leading-[1.8]">Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups offer you tailored services specific to your needs.</p>
             </div>
             <div>
-              <h3>Do better with money</h3>
+              <h3 className='text-[25px]'>Do better with money</h3>
               <p className="mt-[5px]  text-[#666] text-base leading-[1.8]">With initiatives like Nudge and Kill Switch, we don't just facilitate transactions, but actively help you do better with your money.</p>
             </div>
           </div>
