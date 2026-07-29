@@ -97,32 +97,35 @@ function App() {
         </section>
         <section>
           <div className='container relative w-[1100px] mx-w-[100%] m-auto box-border '>
-            <div className=''>
-              <div>
+            <div className='flex justify-between items-center box-border '>
+              <div className='ml-0 text-center'>
                 <a href="https://zerodha.com/varsity/"> <img src="/index-education.svg" alt="education" /></a>
               </div>
-              <div className='column'>
-                <h2>Free and open market education</h2>
-                <p>
+              <div className='column basis-[48%] w-[48%] box-border flex-[0_1_auto]'>
+                <h2 className='m-0  font-medium mb-[20px] text-2xl leading-[1.5]'>Free and open market education</h2>
+                <p className='text-base leading-[1.8] mb-[15px] text-[#424242]'>
               Varsity, the largest online stock market education book in the world
               covering everything from the basics to advanced trading.
               </p>
-              <a href="https://zerodha.com/varsity">Varsity 
-              <i className='icon-arrow'></i>
+              <a className='text-[#387ed1] no-underline font-medium' href="https://zerodha.com/varsity">Varsity
               </a>
-              <p>
+              <p className='mt-[30px] text-base leading-[1.8] mb-[15px] text-[#424242]'>
               TradingQ&amp;A, the most active trading and investment community in
               India for all your market related queries.
              </p>
-             <a href="https://tradingqna.com/">
+             <a className='text-[#387ed1]  no-underline font-medium' href="https://tradingqna.com/">
              TradingQ&amp;A 
-             <i className='icon-arrow'></i>
              </a>
               </div>
             </div>
           </div>
         </section>
       </div>
+      <section className='pt-20 py-10 text-center last:pb-20'>
+       <div className='w-[900px] max-w-full mx-auto box-border'>
+        <h2>Open a Zerodha account</h2>
+       </div>
+      </section>
     </>
   )
 }
