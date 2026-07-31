@@ -18,7 +18,7 @@ function App() {
           <img src="/landing.svg" alt="landing" />
           <h1 className='flex items-center justify-center font-medium text-[1.75rem] leading-[1.25] text-[#424242] font-["inter"-serif] '>Invest in everything</h1>
           <p className='flex items-center justify-center font-normal text-[1.25rem] leading-[1.25] text-[#424242] py-2'> Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-          <a href="" className='block w-fit mx-auto  bg-[#387ed1] text-white border border-transparent rounded-[3px] px-[30px] py-[10px] text-center cursor-pointer box-border text-[1.2em] leading-[1.2em] hover:bg-black transition-colors duration-300 '>Sign up for free</a>
+          <a href="https://zerodha.com/open-account/" className='inline-block mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300'>Sign up for free</a>
         </div>
         <section className="container  flex items-center  relative w-[1100px] max-w-full mx-auto box-border ">
           <div className='section w-1/2 '>
@@ -123,7 +123,11 @@ function App() {
       </div>
       <section className='pt-20 py-10 text-center last:pb-20'>
        <div className='w-[900px] max-w-full mx-auto box-border'>
-        <h2>Open a Zerodha account</h2>
+        <h2 className='text-2xl m-[20px] leading-[1.5] font-medium'>Open a Zerodha account</h2>
+        <p className='text-[#666] text-base leading-[1.8] mb-[15px] '>
+				Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&amp;O trades.
+			  </p>
+        <a href="https://zerodha.com/open-account/" className="inline-block mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300">Sign up for free</a>
        </div>
       </section>
     </>
