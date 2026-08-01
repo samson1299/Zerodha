@@ -18,7 +18,7 @@ function App() {
           <img src="/landing.svg" alt="landing" />
           <h1 className='flex items-center justify-center font-medium text-[1.75rem] leading-[1.25] text-[#424242] font-["inter"-serif] '>Invest in everything</h1>
           <p className='flex items-center justify-center font-normal text-[1.25rem] leading-[1.25] text-[#424242] py-2'> Online platform to invest in stocks, derivatives, mutual funds, ETFs, bonds, and more.</p>
-          <a href="https://zerodha.com/open-account/" className='inline-block mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300'>Sign up for free</a>
+          <a href="https://zerodha.com/open-account/" className=' flex items-center justify-center mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300'>Sign up for free</a>
         </div>
         <section className="container  flex items-center  relative w-[1100px] max-w-full mx-auto box-border ">
           <div className='section w-1/2 '>
@@ -130,6 +130,17 @@ function App() {
         <a href="https://zerodha.com/open-account/" className="inline-block mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300">Sign up for free</a>
        </div>
       </section>
+      <footer className='bg-[#fbfbfb] p-4  border-[1px solid #eee] '>
+        <div className='relative w-full max-w-[1100px] mx-auto box-border'>
+          <div className='flex flex-row flex-wrap justify-between text-sm grow-0 shrink basis-auto box-border'>
+            <div className='basis-[22%] w-[22%] grow-0 shrink box-border first:ml-0'>
+              <div className=' logo py-[10px]'>
+                <img src="/logo.svg" alt="logo" className='h-[25px]' />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </>
   )
 }
