@@ -1,4 +1,5 @@
 import './App.css'
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 function App() {
   return (
     <>
@@ -75,7 +76,7 @@ function App() {
                 </div>
 
                 <div className='pricing-card flex flex-col items-center text-center  gap-3 position-relative'>
-                  <img src='/O.svg' alt='pricing' className='h-[80px] w-auto' />        
+                  <img src='/O.svg' alt='pricing' className='h-[80px] w-auto' />
                   <p className='text-lg leading-6 text-[#666]'>
                     Free equity delivery
                     <br />
@@ -104,39 +105,74 @@ function App() {
               <div className='column basis-[48%] w-[48%] box-border flex-[0_1_auto]'>
                 <h2 className='m-0  font-medium mb-[20px] text-2xl leading-[1.5]'>Free and open market education</h2>
                 <p className='text-base leading-[1.8] mb-[15px] text-[#424242]'>
-              Varsity, the largest online stock market education book in the world
-              covering everything from the basics to advanced trading.
-              </p>
-              <a className='text-[#387ed1] no-underline font-medium' href="https://zerodha.com/varsity">Varsity
-              </a>
-              <p className='mt-[30px] text-base leading-[1.8] mb-[15px] text-[#424242]'>
-              TradingQ&amp;A, the most active trading and investment community in
-              India for all your market related queries.
-             </p>
-             <a className='text-[#387ed1]  no-underline font-medium' href="https://tradingqna.com/">
-             TradingQ&amp;A 
-             </a>
+                  Varsity, the largest online stock market education book in the world
+                  covering everything from the basics to advanced trading.
+                </p>
+                <a className='text-[#387ed1] no-underline font-medium' href="https://zerodha.com/varsity">Varsity
+                </a>
+                <p className='mt-[30px] text-base leading-[1.8] mb-[15px] text-[#424242]'>
+                  TradingQ&amp;A, the most active trading and investment community in
+                  India for all your market related queries.
+                </p>
+                <a className='text-[#387ed1]  no-underline font-medium' href="https://tradingqna.com/">
+                  TradingQ&amp;A
+                </a>
               </div>
             </div>
           </div>
         </section>
       </div>
       <section className='pt-20 py-10 text-center last:pb-20'>
-       <div className='w-[900px] max-w-full mx-auto box-border'>
-        <h2 className='text-2xl m-[20px] leading-[1.5] font-medium'>Open a Zerodha account</h2>
-        <p className='text-[#666] text-base leading-[1.8] mb-[15px] '>
-				Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&amp;O trades.
-			  </p>
-        <a href="https://zerodha.com/open-account/" className="inline-block mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300">Sign up for free</a>
-       </div>
+        <div className='w-[900px] max-w-full mx-auto box-border'>
+          <h2 className='text-2xl m-[20px] leading-[1.5] font-medium'>Open a Zerodha account</h2>
+          <p className='text-[#666] text-base leading-[1.8] mb-[15px] '>
+            Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&amp;O trades.
+          </p>
+          <a href="https://zerodha.com/open-account/" className="inline-block mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300">Sign up for free</a>
+        </div>
       </section>
-      <footer className='bg-[#fbfbfb] p-4  border-[1px solid #eee] '>
+      <footer className='bg-[#fbfbfb] p-4  border-[#eee] '>
         <div className='relative w-full max-w-[1100px] mx-auto box-border'>
           <div className='flex flex-row flex-wrap justify-between text-sm grow-0 shrink basis-auto box-border'>
             <div className='basis-[22%] w-[22%] grow-0 shrink box-border first:ml-0'>
               <div className=' logo py-[10px]'>
                 <img src="/logo.svg" alt="logo" className='h-[25px]' />
               </div>
+              <p className="copyright text-grey m-0 text-[0.8rem] text-[#666] block my-4 mx-0 leading-[1.8]">© 2010 - 2026, Zerodha Broking Ltd.</p>
+              <p className="copyright text-grey m-0 text-[0.8rem] text-[#666] block my-4 mx-0 leading-[1.8]">All rights reserved.</p>
+              <ul className='text-[#424242] list-none m-0 mt-[15px] p-0 text-sm flex gap-4 '>
+                <li>
+                  <a href="https://x.com/zerodha" target="_blank" rel="noopener noreferrer" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><img src="x-twitter.svg" alt="x" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://facebook.com/zerodha.social" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaFacebook /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://instagram.com/zerodhaonline/" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaInstagram /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://linkedin.com/company/zerodha" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaLinkedin />
+                  </a>
+                </li>
+              </ul>
+              <hr className='border-0 border-t border-[#eee] h-0 overflow-visible text-sm' />
+              <ul className='text-[#424242] list-none m-0 mt-[15px] p-0 text-sm flex gap-4 '>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/@zerodhaonline">
+                    <img className="youtube-logo" src="https://zerodha.com/static/images/youtube.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://whatsapp.com/channel/0029Va8tzF0EquiIIb9j791g">
+                    <img className="whatsapp-logo" src="https://zerodha.com/static/images/whatsapp-logo.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://t.me/zerodhain">
+            
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
