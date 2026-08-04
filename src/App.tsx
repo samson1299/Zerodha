@@ -1,5 +1,5 @@
 import './App.css'
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 function App() {
   return (
     <>
@@ -164,15 +164,109 @@ function App() {
                 </li>
                 <li>
                   <a target="_blank" href="https://whatsapp.com/channel/0029Va8tzF0EquiIIb9j791g">
-                    <img className="whatsapp-logo" src="https://zerodha.com/static/images/whatsapp-logo.svg" alt="" />
+                    <img src="/whatsapp-logo.svg" className='w-5 h-5' alt="whatsapp" />
                   </a>
                 </li>
                 <li>
-                  <a target="_blank" href="https://t.me/zerodhain">
-            
-                  </a>
+                  <a target="_blank" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none ' href="https://t.me/zerodhain"><FaTelegram /></a>
                 </li>
               </ul>
+              <div className='mt-5 flex gap-[10px] text-[0.875rem]'>
+                <a target="_blank" className='' href="https://play.google.com/store/apps/details?id=com.zerodha.kite3">
+                  <img src="https://zerodha.com/static/images/google-play-badge-light.svg" alt="Get it on Google Play" />
+                </a>
+                <a target="_blank" href="https://apps.apple.com/in/app/kite-zerodha/id1449453802">
+                  <img src="https://zerodha.com/static/images/appstore-badge-light.svg" alt="Download on the App Store" />
+                </a>
+              </div>
+            </div>
+            <div className='basis-[74%] w-[74%] box-border flex-[0_1_auto]  '>
+              <div className='flex flex-row flex-wrap justify-between box-border flex-[0_1_auto]  '>
+                <div className='basis-[22%] w-[22%] box-border flex-[0_1_auto]  '>
+                  <ul className='list-none m-0 p-0  '>
+                    <li className='text-lg font-medium mb-[10px] '>Account</li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/">Open demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/minor/">Minor demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/nri/">NRI demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/huf/">HUF demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/commodities/">Commodity</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/dematerialise/">Dematerialisation</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/fund-transfer/">Fund transfer</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/mtf/">MTF</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                  <ul className='list-none m-0 p-0'>
+                    <li className='text-lg font-medium mb-[10px]'>Support</li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/contact/">Contact us</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://support.zerodha.com">Support portal</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a target="_blank" href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/how-do-i-create-a-ticket-at-zerodha">How to file a complaint?</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a target="_blank" href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/track-complaints-or-tickets">Status of your complaints</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/marketintel/bulletin/">Bulletin</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/marketintel/circulars/">Circular</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/z-connect/">Z-Connect blog</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/resources/">Downloads</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                   <ul className='list-none m-0 p-0'>
+                    <li className='text-lg font-medium mb-[10px]'>Company</li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/about/">About</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/about/philosophy/">Philosophy</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/media/">Press &amp; media</a></li>
+                    <li className='mb-[10px]'><a href="https://careers.zerodha.com/">Careers</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/cares/">Zerodha Cares (CSR)</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.tech/">Zerodha.tech</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/open-source/">Open source</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/refer/">Referral program</a></li>
+                   </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
