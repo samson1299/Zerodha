@@ -49,12 +49,12 @@ const Signup = () => {
               </div>
               <div className="max-w-[400px] basis-[48%] w-[48%] box-border flex-[0_1_auto]">
                 <div className="hidden">Open a free demat &amp; trading account online</div>
-                <div className="mb-[5px] text-left text-2xl leading-[1.5] font-medium">Signup now</div>
-                <span className="text-[#9b9b9b]">Or track your existing application</span>
+                <div className="mb-[10px] text-left text-2xl leading-[1.5] font-medium">Signup now</div>
+                <span className="text-[#9b9b9b] ">Or track your existing application</span>
                 <form action="relative">
-                  <div className="box-border flex flex-[0_1_auto] flex-row flex-wrap">
-                    <span className="absolute rounded-[2px] px-[10px] pt-[7px] pb-[11px] top-[1px] left-[1px] text-[#424242] border-r border-r-[#d1d1d1] text-[1.2em] w-[70px]">
-                      <img className="relative top-[7px] mr-[3px] max-w-full border-none" src="/india-flag.svg" alt="img" />
+                  <div className="relative box-border flex flex-[0_1_auto] flex-row flex-wrap">
+                    <span className=" text-[#424242] absolute left-[1px] top-[1px] h-[55px] w-[90px] flex items-center justify-center gap-1 text-[#424242] border-r border-r-[#d1d1d1] text-[1.2em]">
+                      <img className="w-[20px] h-auto border-none" src="/india-flag.svg" alt="img" />
                       +91
                       <span className="hidden absolute w-[170px] text-[14px] p-[10px] bg-white border border-[#e1e1e1] rounded-[3px] top-[60px] left-[2px]">NRI account? <a className="text-[#387ed1] no-underline font-medium bg-transparent" href="https://zerodha.com/open-account/nri/">Click here</a>
                       </span>
@@ -64,12 +64,22 @@ const Signup = () => {
                     <input className="font-inherit text-[100%] leading-[1.15] m-0" type="hidden" name="source" id="user_source" value="zerodha"></input>
                     <input className="[font-family:inherit] text-[100%] leading-[1.15] m-0" type="hidden" name="partner_id" id="user_id" value="" ></input>
                   </div>
-                  <div className="open-account-submit-container">
-                    <button className= "inline-block px-[30px] py-[10px] bg-[#387ed1] text-white text-center text-[1.2em] leading-[1.2em] font-medium no-underline whitespace-nowrap rounded-[3px] border border-transparent cursor-pointer box-border appearance-auto w-[260px] h-[54px] mb-[20px]" type="submit" id="open_account_proceed_form">
+                  <div className="mt-[30px]">
+                    <button className="relative m-4 px-[30px] py-[10px] bg-[#387ed1] text-white text-center text-[1.2em] leading-[1.2em] font-medium no-underline whitespace-nowrap rounded-[3px] border border-transparent cursor-pointer box-border appearance-auto w-[260px] h-[54px] mb-[20px]" type="submit" id="open_account_proceed_form">
                       Get OTP
                     </button>
                   </div>
                 </form>
+                <p className="text-grey text-xs leading-[1.8] mb-[15px]">
+                  <span className="text-[#666] font-light">
+                    By proceeding, you agree to the Zerodha
+                    <a href="" target="_blank">terms</a>
+                    &amp;
+                    <a href="" target="_blank">privacy policy</a>
+                  </span>
+                </p>
+                <hr />
+                <span className="pt-[65px] text-[#424242]">Looking to open NRI account? <a href="https://zerodha.com/open-account/nri/">Click here</a></span>
               </div>
             </div>
           </div>
