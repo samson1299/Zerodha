@@ -12,7 +12,6 @@ const Home = () => {
                         <Link to="/products">Products</Link>
                         <Link to="/pricing">Pricing</Link>
                         <Link to="/support">Support</Link>
-
                     </div>
                 </nav>
                 <div className=' relative w-[1100px] max-w-full mx-auto box-border m-30'>
