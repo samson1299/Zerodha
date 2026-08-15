@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 const Signup = () => {
 
   return (
@@ -13,19 +15,48 @@ const Signup = () => {
             <div className="box-border basis-[56.666667%] w-[56.666667%] flex-[0_1_auto]  items-center justify-center ">
               <ul className="list-none flex justify-end text-righ">
                 <li>
-                  <a className="inline px-5 inline-block   box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]" href="">Signup</a>
+                  <Link
+                    to="/signup"
+                    className="inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]"
+                  >
+                    Signup
+                  </Link>
                 </li>
+
                 <li>
-                  <a className="inline px-5 inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]" href="">About</a>
+                  <Link
+                    to="/about"
+                    className="inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]"
+                  >
+                    About
+                  </Link>
                 </li>
+
                 <li>
-                  <a className="inline px-5 inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]" href="">Products</a>
+                  <Link
+                    to="/products"
+                    className="inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]"
+                  >
+                    Products
+                  </Link>
                 </li>
+
                 <li>
-                  <a className="inline px-5 inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]" href="">Pricing</a>
+                  <Link
+                    to="/pricing"
+                    className="inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]"
+                  >
+                    Pricing
+                  </Link>
                 </li>
+
                 <li>
-                  <a className="inline px-5 inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]" href="">Support</a>
+                  <Link
+                    to="/support"
+                    className="inline-block box-border p-5 text-[0.9rem] text-[#666] font-normal no-underline transition-colors duration-300 hover:text-[#387ed1]"
+                  >
+                    Support
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -167,7 +198,7 @@ const Signup = () => {
             <div className="box-border flex flex-[0_1_auto] flex-row flex-wrap items-center justify-between">
               <div className="ml-0 basis-[48%] w-[48%] box-border flex-[0_1_auto]">
                 <p className="text-center text-base leading-[1.8] mb-[15px]">
-                  <img className="w-[350px] max-w-full mb-[15px]" src="/acop-benefits.svg" alt="benefits of Zerodha"/>
+                  <img className="w-[350px] max-w-full mb-[15px]" src="/acop-benefits.svg" alt="benefits of Zerodha" />
                 </p>
                 <h2 className="mt-0 mb-[50px] text-2xl leading-[1.5] font-medium">
                   Benefits of opening a Zerodha demat account
@@ -176,22 +207,301 @@ const Signup = () => {
               <div className="basis-[48%] w-[48%] box-border flex-[0_1_auto]">
                 <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">Unbeatable pricing</h3>
                 <p className="text-[#666] text-base leading-[1.8] mb-[15px]">Zero charges for equity &amp; mutual fund investments. Flat ₹20 fees for intraday and F&amp;O trades.</p>
-                <br/>
-                  <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">Best investing experience</h3>
-                  <p className="text-[#666] text-base leading-[1.8] mb-[15px]">Simple and intuitive trading platform with an easy-to-understand user interface.</p>
-                  <br/>
-                    <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">No spam or gimmicks</h3>
-                    <p className="text-[#666] text-base leading-[1.8] mb-[15px]">Committed to transparency — no gimmicks, spam, "gamification", or intrusive push notifications.</p>
-                    <br/>
-                      <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">The Zerodha universe</h3>
-                      <p className="text-[#666] text-base leading-[1.8] mb-[15px]">More than just an app — gain free access to the entire ecosystem of our partner products.</p>
-                    </div>
-                  </div>
+                <br />
+                <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">Best investing experience</h3>
+                <p className="text-[#666] text-base leading-[1.8] mb-[15px]">Simple and intuitive trading platform with an easy-to-understand user interface.</p>
+                <br />
+                <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">No spam or gimmicks</h3>
+                <p className="text-[#666] text-base leading-[1.8] mb-[15px]">Committed to transparency — no gimmicks, spam, "gamification", or intrusive push notifications.</p>
+                <br />
+                <h3 className="text-[20px] leading-[1.6] mt-0 mb-[20px] font-medium">The Zerodha universe</h3>
+                <p className="text-[#666] text-base leading-[1.8] mb-[15px]">More than just an app — gain free access to the entire ecosystem of our partner products.</p>
               </div>
             </div>
-          </main>
-        </>
-        )
+          </div>
+        </div>
+        <div className="px-10">
+          <div className="relative w-[1100px] max-w-full mx-auto box-border">
+            <h2 className="mb-[50px] text-center text-[1.5rem] leading-[1.5] mt-0 font-medium">
+              Explore different account types
+            </h2>
+            <div className="box-border flex flex-row flex-wrap flex-[0_1_auto] items-center justify-between">
+              <div className="ml-0 basis-[30.6666666667%] w-[30.6666666667%] box-border flex-[0_1_auto]">
+                <a className="inline-block border border-[#e1e1e1] rounded-[5px] p-[30px] relative text-[#387ed1] no-underline font-medium bg-transparent" href="https://zerodha.com/open-account/">
+                  <img className="absolute left-[-18px] bg-[#eff6ff] rounded-full p-[6px] max-w-full border-none" src="acop-individual.svg" alt="individual account opening" />
+                  <h3 className="text-[#444] text-[18px] leading-[1.6] mt-0 font-medium mb-[20px]">Individual Account</h3>
+                  <p className="mb-0 font-normal text-[#666] text-[1rem] leading-[1.8]">Invest in equity, mutual funds and derivatives</p>
+                </a>
+              </div>
+              <div className=" basis-[30.6666666667%] w-[30.6666666667%] box-border flex-[0_1_auto]">
+                <a className="inline-block border border-[#e1e1e1] rounded-[5px] p-[30px] relative text-[#387ed1] no-underline font-medium bg-transparent" href="https://zerodha.com/open-account/nri/">
+                  <img className="absolute left-[-18px] bg-[#eff6ff] rounded-full p-[6px] max-w-full border-none" src="/acop-nri.svg" alt="NRI account opening" />
+                  <h3 className="text-[#444] text-[18px] leading-[1.6] mt-0 font-medium mb-[20px]">NRI Account</h3>
+                  <p className="mb-0 font-normal text-[#666] text-[1rem] leading-[1.8]">Invest in equity, mutual funds, debentures, and more</p>
+                </a>
+              </div>
+              <div className=" basis-[30.6666666667%] w-[30.6666666667%] box-border flex-[0_1_auto]">
+                <a className="inline-block border border-[#e1e1e1] rounded-[5px] p-[30px] relative text-[#387ed1] no-underline font-medium bg-transparent" href="https://zerodha.com/open-account/huf/">
+                  <img className="absolute left-[-18px] bg-[#eff6ff] rounded-full p-[6px] max-w-full border-none" src="/acop-huf.svg" alt="HUF account opening" />
+                  <h3 className="text-[#444] text-[18px] leading-[1.6] mt-0 font-medium mb-[20px]">HUF Account</h3>
+                  <p className="mb-0 font-normal text-[#666] text-[1rem] leading-[1.8]">Make tax-efficient investments for your family</p>
+                </a>
+              </div>
+            </div>
+            <br /> <br />
+            <div className="items-center flex justify-between box-border flex-[0_1_auto] flex-row flex-wrap">
+              <div className="box-border flex flex-row flex-wrap flex-[0_1_auto] items-center justify-between">
+                <a className="inline-block border border-[#e1e1e1] rounded-[5px] p-[30px] relative text-[#387ed1] no-underline font-medium bg-transparent" href="https://zerodha.com/open-account/minor/">
+                  <img className="absolute left-[-18px] bg-[#eff6ff] rounded-full p-[6px] max-w-full border-none" src="/acop-minor.svg" alt="minor account opening" />
+                  <h3 className="text-[#444] text-[18px] leading-[1.6] mt-0 font-medium mb-[20px]">Minor Account</h3>
+                  <p className="mb-0 font-normal text-[#666] text-[1rem] leading-[1.8]">Teach your little ones about money &amp; invest for their future with them</p>
+                </a>
+              </div>
+              <div className="box-border flex flex-row flex-wrap flex-[0_1_auto] items-center justify-between">
+                <a className="inline-block border border-[#e1e1e1] rounded-[5px] p-[30px] relative text-[#387ed1] no-underline font-medium bg-transparent" href="https://support.zerodha.com/category/account-opening/company-partnership-and-huf-account-opening">
+                  <img className="absolute left-[-18px] bg-[#eff6ff] rounded-full p-[6px] max-w-full border-none" src="/acop-corporate.svg" alt="corporate account opening" />
+                  <h3 className="text-[#444] text-[18px] leading-[1.6] mt-0 font-medium mb-[20px]">Corporate / LLP/ Partnership</h3>
+                  <p className="mb-0 font-normal text-[#666] text-[1rem] leading-[1.8]">Manage your business surplus and investments easily</p>
+                </a>
+              </div>
+              <div className="box-border flex flex-row flex-wrap flex-[0_1_auto] items-center justify-between">&nbsp;</div>
+            </div>
+          </div>
+        </div>
+        <div className="py-[40px]">
+          <div className="max-w-[1100px] mx-auto px-[40px] pb-[80px]">
+            <h2 className="text-[18px] font-medium leading-[1.6] py-[40px] mt-0 mb-[20px] md:text-[24px] md:pt-[40px] md:pb-[40px]">FAQs</h2>
+            <div className="flex flex-col gap-[20px]">
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">What is a Zerodha account</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>A Zerodha account is a combined demat and trading account that allows investors to buy, sell, and hold securities digitally.</p>
+                </div>
+              </details>
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">What documents are required to open a demat account?</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>The following documents are required to open a Zerodha account online:</p>
+                  <ul>
+                    <li>PAN number</li>
+                    <li>Aadhaar Card (Linked with a phone number for OTP verification)</li>
+                    <li>Cancelled cheque or bank account statement (To link your bank account)</li>
+                    <li>Income proof (Required only if you wish to trade in Futures &amp; options)</li>
+                  </ul>
+                </div>
+              </details>
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">Is Zerodha account opening free?</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>Yes, It is completely free.</p>
+                </div>
+              </details>
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">Are there any AMC (Account Maintenance Charges) for a demat account?</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>There is no AMC for the first year on all new resident individual accounts opened from June 1, 2026. From the second year, charges depend on the account type.<br />
+                    For Basic Services Demat Account (BSDA): Zero charges on holdings up to ₹4 lakh; ₹100/year between ₹4 lakh and ₹10 lakh.<br />
+                    For non-Basic Services Demat Account: ₹300 per year + GST.<br />
+                    To learn more about BSDA, <a href="https://support.zerodha.com/category/account-opening/online-account-opening/online-account-opening-process/articles/how-to-open-a-basic-service-demat-account-at-zerodha" target="_blank">Click here</a>.</p>
+                </div>
+              </details>
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">Can I open a demat account without a bank account?</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>To open a demat account, you must have a bank account in your name.<br />
+                    If UPI verification is completed successfully, no proof of bank is needed. However, if bank verification fails, you'll need to provide either a cancelled cheque or a bank statement to link your bank account to Zerodha.</p>
+                </div>
+              </details>
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">What is a Basic Services Demat Account (BSDA)?</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>BSDA is a demat account designed for retail investors with smaller holdings. It automatically applies if you have only one demat account per PAN and holdings of up to ₹10 lakhs in it. You will not be charged any Account Maintenance Charge (AMC) for holdings up to ₹4 lakhs value, and only ₹25/quarter if holdings are between ₹4 lakhs and ₹10 lakhs.</p>
+                </div>
+              </details>
+              <details className="list-none">
+                <summary className="relative flex justify-between items-center gap-[20px] cursor-pointer border-t border-[#eaeaea] pt-[12px] pb-[12px]">
+                  <h3 className="font-medium text-[14px] leading-[1.7] m-0 md:text-[16px]">Can I open a demat and trading account using the mobile app?</h3>
+                  <span className="inline-block mr-[8px] self-center transition-transform duration-200"></span>
+                </summary>
+                <div className="list-none">
+                  <p>Yes, You can open a demat and trading account completely online using the Zerodha Kite mobile app, available on Android and iOS.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <div className="px-[40px] pb-[100px]">
+          <div className="relative w-[1100px] max-w-full mx-auto box-border text-center">
+            <h2 className="text-[30px] leading-[1.5] mt-0 font-medium mb-0 text-center">Open a Zerodha account</h2>
+            <p className="font-normal text-[18px] leading-[1.6] text-[#666] my-[30px] text-center">
+              Simple and intuitive apps · ₹0 for investments · ₹20 for intraday and F&amp;O trades.
+            </p>
+            <div className="text-center">
+              <a href="https://zerodha.com/open-account/" className=' flex items-center justify-center mt-5 px-[30px] py-[10px] text-center text-[1.2em] leading-[1.2em] font-medium text-white no-underline whitespace-nowrap bg-[#387ed1] border border-transparent rounded-[3px] cursor-pointer box-border hover:bg-black transition-colors duration-300'>Sign up for free</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer className='bg-[#fbfbfb] p-4  border-[#eee] '>
+        <div className='relative w-full max-w-[1100px] mx-auto box-border'>
+          <div className='flex flex-row flex-wrap justify-between text-sm grow-0 shrink basis-auto box-border'>
+            <div className='basis-[22%] w-[22%] grow-0 shrink box-border first:ml-0'>
+              <div className=' logo py-[10px]'>
+                <img src="/logo.svg" alt="logo" className='h-[25px]' />
+              </div>
+              <p className="copyright text-grey m-0 text-[0.8rem] text-[#666] block my-4 mx-0 leading-[1.8]">© 2010 - 2026, Zerodha Broking Ltd.</p>
+              <p className="copyright text-grey m-0 text-[0.8rem] text-[#666] block my-4 mx-0 leading-[1.8]">All rights reserved.</p>
+              <ul className='text-[#424242] list-none m-0 mt-[15px] p-0 text-sm flex gap-4 '>
+                <li>
+                  <a href="https://x.com/zerodha" target="_blank" rel="noopener noreferrer" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><img src="x-twitter.svg" alt="x" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://facebook.com/zerodha.social" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaFacebook /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://instagram.com/zerodhaonline/" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaInstagram /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://linkedin.com/company/zerodha" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaLinkedin />
+                  </a>
+                </li>
+              </ul>
+              <hr className='border-0 border-t border-[#eee] h-0 overflow-visible text-sm' />
+              <ul className='text-[#424242] list-none m-0 mt-[15px] p-0 text-sm flex gap-4 '>
+                <li>
+                  <a target="_blank" href="https://www.youtube.com/@zerodhaonline">
+                    <img className="youtube-logo" src="https://zerodha.com/static/images/youtube.svg" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://whatsapp.com/channel/0029Va8tzF0EquiIIb9j791g">
+                    <img src="/whatsapp-logo.svg" className='w-5 h-5' alt="whatsapp" />
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none ' href="https://t.me/zerodhain"><FaTelegram /></a>
+                </li>
+              </ul>
+              <div className='mt-5 flex gap-[10px] text-[0.875rem]'>
+                <a target="_blank" className='' href="https://play.google.com/store/apps/details?id=com.zerodha.kite3">
+                  <img src="https://zerodha.com/static/images/google-play-badge-light.svg" alt="Get it on Google Play" />
+                </a>
+                <a target="_blank" href="https://apps.apple.com/in/app/kite-zerodha/id1449453802">
+                  <img src="https://zerodha.com/static/images/appstore-badge-light.svg" alt="Download on the App Store" />
+                </a>
+              </div>
+            </div>
+            <div className='basis-[74%] w-[74%] box-border flex-[0_1_auto]  '>
+              <div className='flex flex-row flex-wrap justify-between box-border flex-[0_1_auto]  '>
+                <div className='basis-[22%] w-[22%] box-border flex-[0_1_auto]  '>
+                  <ul className='list-none m-0 p-0  '>
+                    <li className='text-lg font-medium mb-[10px] '>Account</li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/">Open demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/minor/">Minor demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/nri/">NRI demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/open-account/huf/">HUF demat account</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/commodities/">Commodity</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/dematerialise/">Dematerialisation</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/fund-transfer/">Fund transfer</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/mtf/">MTF</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                  <ul className='list-none m-0 p-0'>
+                    <li className='text-lg font-medium mb-[10px]'>Support</li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/contact/">Contact us</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://support.zerodha.com">Support portal</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a target="_blank" href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/how-do-i-create-a-ticket-at-zerodha">How to file a complaint?</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a target="_blank" href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/track-complaints-or-tickets">Status of your complaints</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/marketintel/bulletin/">Bulletin</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/marketintel/circulars/">Circular</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/z-connect/">Z-Connect blog</a>
+                    </li>
+                    <li className='mb-[10px]'>
+                      <a href="https://zerodha.com/resources/">Downloads</a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                  <ul className='list-none m-0 p-0'>
+                    <li className='text-lg font-medium mb-[10px]'>Company</li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/about/">About</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/about/philosophy/">Philosophy</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/media/">Press &amp; media</a></li>
+                    <li className='mb-[10px]'><a href="https://careers.zerodha.com/">Careers</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/cares/">Zerodha Cares (CSR)</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.tech/">Zerodha.tech</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/open-source/">Open source</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/refer/">Referral program</a></li>
+                  </ul>
+                </div>
+                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                  <ul className='list-none m-0 p-0'>
+                    <li className='text-lg font-medium mb-[10px]'>Quick links</li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/ipo/">Upcoming IPOs</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/charges/">Brokerage charges</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/marketintel/holiday-calendar/">Market holidays</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/markets/calendar/">Economic calendar</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/calculators/">Calculators</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/markets/stocks/">Markets</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/markets/sector/">Sectors</a></li>
+                    <li className='mb-[10px]'><a href="https://zerodha.com/market/giftnifty/">Gift Nifty</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </>
+  )
 }
 
-        export default Signup
+export default Signup
