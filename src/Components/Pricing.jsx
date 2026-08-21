@@ -48,34 +48,34 @@ const Pricing = () => {
                         </div>
                     </div>
                 </section>
-                <section className="charges-sections">
-                    <div className="container">
-                        <div  className="tinytabs"><nav className="tabs"><a className="tab tab-equities sel" href="#tab-equities" >Equity</a><a className="tab tab-fo" href="#tab-fo" >F&amp;O</a><a className="tab tab-currency" href="#tab-currency">Currency</a><a className="tab tab-commodities" href="#tab-commodities" >Commodity</a></nav>
-                            <div className="section" >
-                                <h3 className="title">Equity</h3>
-                                <div className="table-container">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>&nbsp;</th>
-                                                <th>Equity delivery</th>
-                                                <th>Equity intraday</th>
-                                                <th className="hide-on-mobile">F&amp;O - Futures</th>
-                                                <th className="hide-on-mobile">F&amp;O - Options</th>
+                <section className="pt-20 last:pb-20">
+                    <div className="relative w-[1100px] max-w-full mx-auto box-border">
+                        <div  className="block"><nav className="flex flex-row flex-wrap border-b border-[#e1e1e1] mb-[30px] block"><a className="sel:text-shadow-none block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] text-[#666] font-medium border-none border-b-2 border-b-[#387ed1] min-w-[130px] text-center text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] bg-[rgba(0,0,0,0)]" href="#tab-equities" >Equity</a><a className="block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] hidden min-w-[130px] text-center border-none rounded-none text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] font-medium bg-[rgba(0,0,0,0)]" href="#tab-fo" >F&amp;O</a><a className="block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] min-w-[130px] text-center border-none rounded-none text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] font-medium bg-[rgba(0,0,0,0)]" href="#tab-currency">Currency</a><a className="block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] min-w-[130px] text-center border-none rounded-none text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] font-medium bg-[rgba(0,0,0,0)]" href="#tab-commodities" >Commodity</a></nav>
+                            <div className="block overflow-hidden clear-both rounded-[3px]" >
+                                <h3 className="hidden text-[1.25rem] leading-[1.6] mt-0 font-medium mb-[20px] block">Equity</h3>
+                                <div className="overflow-auto w-full max-w-full block">
+                                    <table className='border-spacing-0 w-full rounded-[3px] border border-[#ddd] table box-border border-separate'>
+                                        <thead className='table-header-group align-middle border-inherit'>
+                                            <tr className='border-b border-[#f4f4f4] table-row align-middle border-inherit'>
+                                                <th className='mx-auto first:pl-[15px] first:border-l-0 first:pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>&nbsp;</th>
+                                                <th className='mx-auto first:pl-[15px] first:border-l-0 first:pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>Equity delivery</th>
+                                                <th className='mx-auto first:pl-[15px] first:border-l-0 first:pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>Equity intraday</th>
+                                                <th className='mx-auto first:pl-[15px] first:border-l-0 first:pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>F&amp;O - Futures</th>
+                                                <th className='mx-auto first:pl-[15px] first:border-l-0 first:pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>F&amp;O - Options</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td className="charges-heads">Brokerage</td>
-                                                <td>0.03% or Rs. 20/executed order whichever is lower</td>
-                                                <td>0.025% on the sell side</td>
-                                                <td className="hide-on-mobile">0.03% or Rs. 20/executed order whichever is lower</td>
-                                                <td className="hide-on-mobile">Flat Rs. 20 per executed order</td>
+                                        <tbody className='table-row-group align-middle border-inherit'>
+                                            <tr className='border-b border-[#f4f4f4] table-row align-middle border-inherit'>
+                                                <td className="text-[0.9rem] text-[#666] pl-[15px] first:pl-[15px] first:border-l-0 border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">Brokerage</td>
+                                                <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.03% or Rs. 20/executed order whichever is lower</td>
+                                                <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.025% on the sell side</td>
+                                                <td className="border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">0.03% or Rs. 20/executed order whichever is lower</td>
+                                                <td className="border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">Flat Rs. 20 per executed order</td>
                                             </tr>
-                                            <tr className="grey-back">
-                                                <td className="charges-heads">STT/CTT</td>
-                                                <td>0.1% on buy &amp; sell</td>
-                                                <td>0.025% on the sell side</td>
+                                            <tr className="border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">
+                                                <td className="text-[0.9rem] text-[#666] pl-[15px] first:pl-[15px] first:border-l-0 border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">STT/CTT</td>
+                                                <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.1% on buy &amp; sell</td>
+                                                <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.025% on the sell side</td>
                                                 <td className="hide-on-mobile">0.05% on the sell side</td>
                                                 <td className="hide-on-mobile">
                                                     <ul className="list-items">
