@@ -76,59 +76,59 @@ const Pricing = () => {
                                                 <td className="text-[0.9rem] text-[#666] pl-[15px] first:pl-[15px] first:border-l-0 border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">STT/CTT</td>
                                                 <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.1% on buy &amp; sell</td>
                                                 <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.025% on the sell side</td>
-                                                <td className="hide-on-mobile">0.05% on the sell side</td>
-                                                <td className="hide-on-mobile">
-                                                    <ul className="list-items">
-                                                        <li>
+                                                <td className="border-none! text-sm px-[15px] py-3">0.05% on the sell side</td>
+                                                <td className="border-none! text-sm px-[15px] py-3">
+                                                    <ul className="pl-5 list-disc">
+                                                        <li className='mb-[5px]'>
                                                             0.15% of the intrinsic value on options that are bought and exercised
                                                         </li>
-                                                        <li>
+                                                        <li className='mb-[5px]'>
                                                             0.15% on sell side (on premium)
                                                         </li>
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td className="charges-heads">Transaction charges</td>
-                                                <td>0.1% on buy &amp; sell</td>
-                                                <td>0.025% on the sell side</td>
-                                                <td className="hide-on-mobile">0.05% on the sell side</td>
-                                                <td className="hide-on-mobile">
-                                                    <ul className="list-items">
-                                                        <li>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className="text-[0.9rem] text-[#666] !pl-[15px]">Transaction charges</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.1% on buy &amp; sell</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.025% on the sell side</td>
+                                                <td className="py-[12px] px-[15px] text-left border-b border-[#eee]">0.05% on the sell side</td>
+                                                <td className="py-[12px] px-[15px] text-left border-b border-[#eee]">
+                                                    <ul className="pl-5 list-disc">
+                                                        <li className='mb-[5px]'>
                                                             0.15% of the intrinsic value on options that are bought and exercised
                                                         </li>
-                                                        <li>
+                                                        <li className='mb-[5px]'>
                                                             0.15% on sell side (on premium)
                                                         </li>
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td className="charges-heads">Transaction charges</td>
-                                                <td>NSE: 0.00307%<br />BSE: 0.00375%</td>
-                                                <td>NSE: 0.00307%<br />BSE: 0.00375%</td>
-                                                <td className="hide-on-mobile">NSE: 0.00183%<br />BSE: 0</td>
-                                                <td className="hide-on-mobile">NSE: 0.03553% (on premium)<br />BSE: 0.0325% (on premium)</td>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className="text-[0.9rem] text-[#666] !pl-[15px] !border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] !pl-[15px] border-l-0 pl-0">Transaction charges</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.00307%<br />BSE: 0.00375%</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.00307%<br />BSE: 0.00375%</td>
+                                                <td className="py-[12px] px-[15px] text-left border-b border-[#eee]">NSE: 0.00183%<br />BSE: 0</td>
+                                                <td className="py-[12px] px-[15px] text-left border-b border-[#eee]">NSE: 0.03553% (on premium)<br />BSE: 0.0325% (on premium)</td>
                                             </tr>
-                                            <tr className="grey-back">
-                                                <td className="charges-heads">GST</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
+                                                <td className="text-[0.9rem] text-[#666] !pl-[15px] !border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] !pl-[15px] border-l-0 pl-0">GST</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                                 <td className="hide-on-mobile">18% on (brokerage + SEBI charges + transaction charges)</td>
                                                 <td className="hide-on-mobile">18% on (brokerage + SEBI charges + transaction charges)</td>
                                             </tr>
-                                            <tr>
-                                                <td className="charges-heads">SEBI charges</td>
-                                                <td>₹10 / crore</td>
-                                                <td>₹10 / crore</td>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className="text-[0.9rem] text-[#666] !pl-[15px] !border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] !pl-[15px] border-l-0 pl-0">SEBI charges</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                                 <td className="hide-on-mobile">₹10 / crore</td>
                                                 <td className="hide-on-mobile">₹10 / crore</td>
                                             </tr>
-                                            <tr className="grey-back">
-                                                <td className="charges-heads">Stamp charges</td>
-                                                <td>0.015% or ₹1500 / crore on buy side</td>
-                                                <td>0.003% or ₹300 / crore on buy side</td>
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
+                                                <td className="text-[0.9rem] text-[#666] !pl-[15px] !border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] !pl-[15px] border-l-0 pl-0">Stamp charges</td>
+                                                <td  className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.015% or ₹1500 / crore on buy side</td>
+                                                <td  className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
                                                 <td className="hide-on-mobile">0.002% or ₹200 / crore on buy side</td>
                                                 <td className="hide-on-mobile">0.003% or ₹300 / crore on buy side</td>
                                             </tr>
@@ -137,22 +137,22 @@ const Pricing = () => {
                                 </div>
                                 <p className="text-12 color-grey">*SEBI charges will be reduced to &#8377;15 per crore once the regulator announces a date.</p>
                             </div>
-                            <div className="section show-on-mobile">
+                            <div className="hidden overflow-hidden clear-both rounded-[3px]">
                                 <h3 className="title" >F&amp;O</h3>
                                 <div className="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <th>&nbsp;</th>
                                                 <th>F&amp;O - Futures</th>
                                                 <th>F&amp;O - Options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">Brokerage</td>
-                                                <td>0.03% or Rs. 20/executed order whichever is lower</td>
-                                                <td>Flat Rs. 20 per executed order</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.03% or Rs. 20/executed order whichever is lower</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Flat Rs. 20 per executed order</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads">STT/CTT</td>
@@ -168,25 +168,25 @@ const Pricing = () => {
                                                     </ul>
                                                 </td>
                                             </tr>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">Transaction charges</td>
-                                                <td>NSE: 0.00183%<br />BSE: 0</td>
-                                                <td>NSE: 0.03553% (on premium)<br />BSE: 0.0325% (on premium)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.00183%<br />BSE: 0</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.03553% (on premium)<br />BSE: 0.0325% (on premium)</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads\">GST</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                             </tr>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads\">SEBI charges</td>
-                                                <td>₹10 / crore</td>
-                                                <td>₹10 / crore</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads">Stamp charges</td>
-                                                <td>0.002% or ₹200 / crore on buy side</td>
-                                                <td>0.003% or ₹300 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.002% or ₹200 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -198,42 +198,42 @@ const Pricing = () => {
                                 <div className="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <th>&nbsp;</th>
                                                 <th>Currency futures</th>
                                                 <th>Currency options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">Brokerage</td>
-                                                <td>0.03% or ₹ 20/executed order whichever is lower</td>
-                                                <td>₹ 20/executed order</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.03% or ₹ 20/executed order whichever is lower</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 20/executed order</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads">STT/CTT</td>
-                                                <td>No STT</td>
-                                                <td>No STT</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>No STT</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>No STT</td>
                                             </tr>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">Transaction charges</td>
-                                                <td>NSE: 0.00035%<br />BSE: 0.00045%</td>
-                                                <td>NSE: 0.0311%<br />BSE: 0.001%</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.00035%<br />BSE: 0.00045%</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.0311%<br />BSE: 0.001%</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads">GST</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                             </tr>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">SEBI charges</td>
-                                                <td>₹10 / crore</td>
-                                                <td>₹10 / crore</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                             </tr>
                                             <tr className="grey-back\">
                                                 <td className="charges-heads\">Stamp charges</td>
-                                                <td>0.0001% or ₹10 / crore on buy side</td>
-                                                <td>0.0001% or ₹10 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.0001% or ₹10 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.0001% or ₹10 / crore on buy side</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -244,43 +244,43 @@ const Pricing = () => {
                                 <div className="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <th>&nbsp;</th>
                                                 <th>Commodity futures</th>
                                                 <th>Commodity options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">Brokerage</td>
-                                                <td>0.03% or Rs. 20/executed order whichever is lower</td>
-                                                <td>₹ 20/executed order</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.03% or Rs. 20/executed order whichever is lower</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 20/executed order</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads">STT/CTT</td>
-                                                <td>0.01% on sell side (Non-Agri)</td>
-                                                <td>0.05% on sell side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.01% on sell side (Non-Agri)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.05% on sell side</td>
                                             </tr>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">Transaction charges</td>
-                                                <td>MCX: 0.0021%<br />NSE: 0.0001%</td>
-                                                <td>MCX: 0.0418%<br />NSE: 0.001%</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0021%<br />NSE: 0.0001%</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0418%<br />NSE: 0.001%</td>
                                             </tr>
                                             <tr className="grey-back">
                                                 <td className="charges-heads">GST</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
-                                                <td>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                             </tr>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className="charges-heads">SEBI charges</td>
-                                                <td><strong>Agri:</strong><br />₹1 /
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><strong>Agri:</strong><br />₹1 /
                                                     crore<br /><strong>Non-agri:</strong><br />₹10 / crore</td>
-                                                <td>₹10 / crore</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                             </tr>
                                             <tr className="grey-back" colSpan="2">
                                                 <td className="charges-heads">Stamp charges</td>
-                                                <td>0.002% or ₹200 / crore on buy side</td>
-                                                <td>0.003% or ₹300 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.002% or ₹200 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -295,31 +295,31 @@ const Pricing = () => {
                                 <div className="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <th>Type of account</th>
                                                 <th>Charges</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Individual account</td>
-                                                <td><span className="free-tag">free</span></td>
+                                            <tr className='border-b border-[#f4f4f4]'> 
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Individual account</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
                                             </tr>
-                                            <tr>
-                                                <td>Minor account</td>
-                                                <td><span className="free-tag">free</span></td>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Minor account</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
                                             </tr>
-                                            <tr>
-                                                <td>NRI account</td>
-                                                <td>₹ 500</td>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NRI account</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 500</td>
                                             </tr>
-                                            <tr>
-                                                <td>HUF account</td>
-                                                <td><span className="free-tag">free</span> (online) / ₹ 500 (offline)</td>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>HUF account</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span> (online) / ₹ 500 (offline)</td>
                                             </tr>
-                                            <tr>
-                                                <td>Partnership, LLP, and Corporate accounts (offline only)</td>
-                                                <td>₹ 500</td>
+                                            <tr className='border-b border-[#f4f4f4]'>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Partnership, LLP, and Corporate accounts (offline only)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 500</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -338,23 +338,23 @@ const Pricing = () => {
                                 <div className="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <th>Value of holdings</th>
                                                 <th>AMC</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Up to ₹4 lakh</td>
-                                                <td><span className="free-tag">free</span></td>
+                                            <tr className="border-b border-[#f4f4f4]">
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Up to ₹4 lakh</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
                                             </tr>
                                             <tr>
-                                                <td>₹4 lakh - ₹10 lakh</td>
-                                                <td>₹100 per year + 18% GST, charged quarterly</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹4 lakh - ₹10 lakh</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹100 per year + 18% GST, charged quarterly</td>
                                             </tr>
-                                            <tr>
-                                                <td>Above ₹10 lakh</td>
-                                                <td>₹300 per year + 18% GST, charged quarterly</td>
+                                            <tr className="border-b border-[#f4f4f4]">
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Above ₹10 lakh</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹300 per year + 18% GST, charged quarterly</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -376,27 +376,27 @@ const Pricing = () => {
                                 <div className="table-container">
                                     <table>
                                         <thead>
-                                            <tr>
+                                            <tr className="border-b border-[#f4f4f4]">
                                                 <th>Service</th>
                                                 <th>Billing Frequency</th>
                                                 <th>Charges</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Tickertape</td>
-                                                <td>Monthly / Quarterly / Annual</td>
-                                                <td>Free: 0 | Pro: 249/699/2399</td>
+                                            <tr className="border-b border-[#f4f4f4]">
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Tickertape</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Monthly / Quarterly / Annual</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Free: 0 | Pro: 249/699/2399</td>
                                             </tr>
-                                            <tr>
-                                                <td>Smallcase</td>
-                                                <td>Per transaction</td>
-                                                <td>Buy &amp; Invest More: 100 | SIP: 10</td>
+                                            <tr className="border-b border-[#f4f4f4]">
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Smallcase</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Per transaction</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Buy &amp; Invest More: 100 | SIP: 10</td>
                                             </tr>
-                                            <tr>
-                                                <td>Kite Connect</td>
-                                                <td>Monthly</td>
-                                                <td>Connect: 500 | Personal: Free</td>
+                                            <tr className="border-b border-[#f4f4f4]">
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Kite Connect</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Monthly</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Connect: 500 | Personal: Free</td>
                                             </tr>
                                         </tbody>
                                     </table>
