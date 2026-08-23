@@ -50,7 +50,16 @@ const Pricing = () => {
                 </section>
                 <section className="pt-20 last:pb-20">
                     <div className="relative w-[1100px] max-w-full mx-auto box-border">
-                        <div  className="block"><nav className="flex flex-row flex-wrap border-b border-[#e1e1e1] mb-[30px] block"><a className="sel:text-shadow-none block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] text-[#666] font-medium border-none border-b-2 border-b-[#387ed1] min-w-[130px] text-center text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] bg-[rgba(0,0,0,0)]" href="#tab-equities" >Equity</a><a className="block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] hidden min-w-[130px] text-center border-none rounded-none text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] font-medium bg-[rgba(0,0,0,0)]" href="#tab-fo" >F&amp;O</a><a className="block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] min-w-[130px] text-center border-none rounded-none text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] font-medium bg-[rgba(0,0,0,0)]" href="#tab-currency">Currency</a><a className="block px-[15px] py-[6px] no-underline rounded-t-[3px] mr-[3px] min-w-[130px] text-center border-none rounded-none text-[1.5rem] pt-0 px-[35px] pb-[5px] text-[#387ed1] font-medium bg-[rgba(0,0,0,0)]" href="#tab-commodities" >Commodity</a></nav>
+                        <div className="block">
+                            <nav className="flex flex-row flex-wrap border-b border-[#e1e1e1] mb-[30px] block">
+                                <button onClick={() => setActiveTab('equity')}
+                                    className={`block min-w-[130px] rounded-t-[3px] border-none
+                                     px-[35px] pt-0 pb-[5px] text-center text-[1.5rem]
+                                     font-medium bg-transparent ${
+                                        activeTab = "equity" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"
+                                        }`}> Equity
+                                </button>
+                            </nav>
                             <div className="block overflow-hidden clear-both rounded-[3px]" >
                                 <h3 className="hidden text-[1.25rem] leading-[1.6] mt-0 font-medium mb-[20px] block">Equity</h3>
                                 <div className="overflow-auto w-full max-w-full block">
@@ -72,7 +81,7 @@ const Pricing = () => {
                                                 <td className="border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">0.03% or Rs. 20/executed order whichever is lower</td>
                                                 <td className="border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">Flat Rs. 20 per executed order</td>
                                             </tr>
-                                            <tr className="border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">
+                                            <tr className="border-b border-[#f4f4f4] table-row align-middle border-inherit">
                                                 <td className="text-[0.9rem] text-[#666] pl-[15px] first:pl-[15px] first:border-l-0 border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle">STT/CTT</td>
                                                 <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.1% on buy &amp; sell</td>
                                                 <td className='border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] table-cell align-middle'>0.025% on the sell side</td>
@@ -127,8 +136,8 @@ const Pricing = () => {
                                             </tr>
                                             <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="text-[0.9rem] text-[#666] !pl-[15px] !border-none text-[0.875rem] py-[12px] px-[15px] text-left border-b border-[#eee] !pl-[15px] border-l-0 pl-0">Stamp charges</td>
-                                                <td  className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.015% or ₹1500 / crore on buy side</td>
-                                                <td  className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.015% or ₹1500 / crore on buy side</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
                                                 <td className="hide-on-mobile">0.002% or ₹200 / crore on buy side</td>
                                                 <td className="hide-on-mobile">0.003% or ₹300 / crore on buy side</td>
                                             </tr>
@@ -173,7 +182,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.00183%<br />BSE: 0</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.03553% (on premium)<br />BSE: 0.0325% (on premium)</td>
                                             </tr>
-                                            <tr className="grey-back">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads\">GST</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
@@ -183,7 +192,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                             </tr>
-                                            <tr className="grey-back">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads">Stamp charges</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.002% or ₹200 / crore on buy side</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
@@ -210,7 +219,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.03% or ₹ 20/executed order whichever is lower</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 20/executed order</td>
                                             </tr>
-                                            <tr className="grey-back">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads">STT/CTT</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>No STT</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>No STT</td>
@@ -220,7 +229,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.00035%<br />BSE: 0.00045%</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NSE: 0.0311%<br />BSE: 0.001%</td>
                                             </tr>
-                                            <tr className="grey-back">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads">GST</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
@@ -230,7 +239,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                             </tr>
-                                            <tr className="grey-back\">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads\">Stamp charges</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.0001% or ₹10 / crore on buy side</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.0001% or ₹10 / crore on buy side</td>
@@ -239,15 +248,15 @@ const Pricing = () => {
                                     </table>
                                 </div>
                             </div>
-                            <div className="section" >
-                                <h3 className="title" >Commodity</h3>
-                                <div className="table-container">
-                                    <table>
-                                        <thead>
+                            <div className="hidden overflow-hidden clear-both rounded-[3px]" >
+                                <h3 className="hidden text-[1.25rem] leading-[1.6] mt-0 font-medium mb-[20px]" >Commodity</h3>
+                                <div className="overflow-auto w-full max-w-full">
+                                    <table className='border-spacing-0 w-full rounded-[3px] border border-[#ddd]'>
+                                        <thead className='table-header-group align-middle'>
                                             <tr className='border-b border-[#f4f4f4]'>
-                                                <th>&nbsp;</th>
-                                                <th>Commodity futures</th>
-                                                <th>Commodity options</th>
+                                                <th className='mx-auto !pl-[15px] border-l-0 pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee]'>&nbsp;</th>
+                                                <th className='mx-auto !pl-[15px] border-l-0 pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee]'>Commodity futures</th>
+                                                <th className='mx-auto !pl-[15px] border-l-0 pl-0 text-[0.875rem] font-medium border-b border-[#ddd] py-[12px] px-[15px] text-left border-b border-[#eee]'>Commodity options</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -256,7 +265,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.03% or Rs. 20/executed order whichever is lower</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 20/executed order</td>
                                             </tr>
-                                            <tr className="grey-back">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads">STT/CTT</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.01% on sell side (Non-Agri)</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.05% on sell side</td>
@@ -266,7 +275,7 @@ const Pricing = () => {
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0021%<br />NSE: 0.0001%</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0418%<br />NSE: 0.001%</td>
                                             </tr>
-                                            <tr className="grey-back">
+                                            <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                 <td className="charges-heads">GST</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
@@ -301,7 +310,7 @@ const Pricing = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr className='border-b border-[#f4f4f4]'> 
+                                            <tr className='border-b border-[#f4f4f4]'>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Individual account</td>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
                                             </tr>
