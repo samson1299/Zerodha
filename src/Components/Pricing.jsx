@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
-
+import { useState } from 'react';
 const Pricing = () => {
+const [activeTab, setActiveTab] = useState("equity");
+
     return (
         <>
             <nav className='navbar fixed top-0 w-full z-10 bg-white shadow-[2px_1px_2px_#eee] box-border flex items-center justify-between px-20 py-5'>
@@ -55,11 +57,37 @@ const Pricing = () => {
                                 <button onClick={() => setActiveTab('equity')}
                                     className={`block min-w-[130px] rounded-t-[3px] border-none
                                      px-[35px] pt-0 pb-[5px] text-center text-[1.5rem]
-                                     font-medium bg-transparent ${
-                                        activeTab = "equity" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"
+                                     font-medium bg-transparent ${activeTab ==="equity" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"
                                         }`}> Equity
                                 </button>
+                                <button onClick={() => setActiveTab('fo')}
+                                    className={`block min-w-[130px] rounded-t-[3px] border-none
+                                    px-[35px] pt-0 pb-[5px] text-center text-[1.5rem]
+                                    font-medium bg-transparent
+                                    ${activeTab === "fo" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"
+
+                                        }`} >f&O
+
+                                </button>
+                                <button onClick={() => setActiveTab("currency")}
+                                    className={`block min-w-[130px] rounded-t-[3px] border-none
+                                      px-[35px] pt-0 pb-[5px] text-center text-[1.5rem]
+                                     font-medium bg-transparent ${activeTab === "currency" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"}`}>Currency
+                                </button>
                             </nav>
+                            
+                               { activeTab === "equity" && (
+                                  
+                                )}
+                                {activeTab === "f0" && (
+
+                                )}
+
+                                {activeTab ==="currency" && (
+
+                                )}
+
+                            
                             <div className="block overflow-hidden clear-both rounded-[3px]" >
                                 <h3 className="hidden text-[1.25rem] leading-[1.6] mt-0 font-medium mb-[20px] block">Equity</h3>
                                 <div className="overflow-auto w-full max-w-full block">
