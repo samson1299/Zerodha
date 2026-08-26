@@ -167,7 +167,7 @@ const Pricing = () => {
                                             </tbody>
                                         </table>
                                     </div>
-                                    <p className="text-12 color-grey">*SEBI charges will be reduced to &#8377;15 per crore once the regulator announces a date.</p>
+                                    
                                 </div>
                             )}
                             {activeTab === "f0" && (
@@ -295,34 +295,34 @@ const Pricing = () => {
                                             <tbody>
                                                 <tr className='border-b border-[#f4f4f4]'>
                                                     <td className="charges-heads">Brokerage</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.03% or Rs. 20/executed order whichever is lower</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹ 20/executed order</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>0.03% or Rs. 20/executed order whichever is lower</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>₹ 20/executed order</td>
                                                 </tr>
                                                 <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                     <td className="charges-heads">STT/CTT</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.01% on sell side (Non-Agri)</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.05% on sell side</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>0.01% on sell side (Non-Agri)</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>0.05% on sell side</td>
                                                 </tr>
                                                 <tr className='border-b border-[#f4f4f4]'>
                                                     <td className="charges-heads">Transaction charges</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0021%<br />NSE: 0.0001%</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0418%<br />NSE: 0.001%</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0021%<br />NSE: 0.0001%</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>MCX: 0.0418%<br />NSE: 0.001%</td>
                                                 </tr>
                                                 <tr className="even:bg-[#fbfbfb] bg-[#fafafb] border-b border-[#f4f4f4]">
                                                     <td className="charges-heads">GST</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>18% on (brokerage + SEBI charges + transaction charges)</td>
                                                 </tr>
                                                 <tr className='border-b border-[#f4f4f4]'>
                                                     <td className="charges-heads">SEBI charges</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><strong>Agri:</strong><br />₹1 /
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'><strong>Agri:</strong><br />₹1 /
                                                         crore<br /><strong>Non-agri:</strong><br />₹10 / crore</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>₹10 / crore</td>
                                                 </tr>
                                                 <tr className="grey-back" colSpan="2">
                                                     <td className="charges-heads">Stamp charges</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.002% or ₹200 / crore on buy side</td>
-                                                    <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>0.002% or ₹200 / crore on buy side</td>
+                                                    <td className='!border-none text-[1.875rem] py-[12px] px-[15px] text-left'>0.003% or ₹300 / crore on buy side</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -332,14 +332,14 @@ const Pricing = () => {
 
 
                         </div><br />
-                        <p className="text-center brokerage-link"><a className="underline" href="/brokerage-calculator">Calculate
+                        <p className="text-[2.25rem] font-normal mt-0 mb-[20px] text-center text-[1rem] leading-[1.8] mb-[15px]"><a className="font-normal text-[#387ed1] no-underline bg-transparent text-[2.25rem] mt-0 mb-[20px] text-center text-[1rem] leading-[1.8] mb-[15px]" href="/brokerage-calculator">Calculate
                             your costs upfront</a> using our brokerage calculator</p>
-                        <section id="account_opening_charges" className="charges-sections">
-                            <div className="container">
-                                <h2 className="charges-subheadings">Charges for account opening</h2>
-                                <div className="table-container">
-                                    <table>
-                                        <thead>
+                        <section  className="pt-[80px]">
+                            <div className="relative w-[1100px] max-w-full mx-auto box-border">
+                                <h2 className="text-[1.5rem] leading-[1.5] mt-0 font-medium mb-[20px]">Charges for account opening</h2>
+                                <div className="overflow-auto w-full max-w-full">
+                                    <table className='border-spacing-0 w-full rounded-[3px] border border-[#ddd]'>
+                                        <thead className='table-header-group align-middle' >
                                             <tr className='border-b border-[#f4f4f4]'>
                                                 <th>Type of account</th>
                                                 <th>Charges</th>
