@@ -336,23 +336,23 @@ const Pricing = () => {
                             your costs upfront</a> using our brokerage calculator</p>
                         <section  className="pt-[80px]">
                             <div className="relative w-[1100px] max-w-full mx-auto box-border">
-                                <h2 className="text-[1.5rem] leading-[1.5] mt-0 font-medium mb-[20px]">Charges for account opening</h2>
+                                <h2 className="text-[1.5rem] leading-[1.5] mt-0 font-medium mb-[20px] text-[#424242]">Charges for account opening</h2>
                                 <div className="overflow-auto w-full max-w-full">
                                     <table className='border-spacing-0 w-full rounded-[3px] border border-[#ddd]'>
                                         <thead className='table-header-group align-middle' >
                                             <tr className='border-b border-[#f4f4f4]'>
-                                                <th>Type of account</th>
-                                                <th>Charges</th>
+                                                <th className='"first:!pl-[15px] first:border-l-0 text-sm font-medium border-b border-[#ddd] py-3 px-[15px] text-left'>Type of account</th>
+                                                <th className='"first:!pl-[15px] first:border-l-0 text-sm font-medium border-b border-[#ddd] py-3 px-[15px] text-left'>Charges</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr className='border-b border-[#f4f4f4]'>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Individual account</td>
-                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="uppercase text-[11px] font-medium text-white bg-[#4caf50] py-1 px-[10px] rounded-[2px]">free</span></td>
                                             </tr>
                                             <tr className='border-b border-[#f4f4f4]'>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Minor account</td>
-                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="uppercase text-[11px] font-medium text-white bg-[#4caf50] py-1 px-[10px] rounded-[2px]">free</span></td>
                                             </tr>
                                             <tr className='border-b border-[#f4f4f4]'>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>NRI account</td>
@@ -360,7 +360,7 @@ const Pricing = () => {
                                             </tr>
                                             <tr className='border-b border-[#f4f4f4]'>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>HUF account</td>
-                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span> (online) / ₹ 500 (offline)</td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="uppercase text-[11px] font-medium text-white bg-[#4caf50] py-1 px-[10px] rounded-[2px]">free</span> (online) / ₹ 500 (offline)</td>
                                             </tr>
                                             <tr className='border-b border-[#f4f4f4]'>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Partnership, LLP, and Corporate accounts (offline only)</td>
@@ -371,27 +371,27 @@ const Pricing = () => {
                                 </div>
                             </div>
                         </section>
-                        <section className="charges-sections">
-                            <div className="container">
-                                <h2 className="charges-subheadings">Demat AMC (Annual Maintenance Charge)</h2>
-                                <p className="free-amc-banner">
+                        <section className="pt-20">
+                            <div className="relative w-[1100px] max-w-full mx-auto box-border">
+                                <h2 className="text-2xl leading-[1.5] mt-0 font-medium mb-5">Demat AMC (Annual Maintenance Charge)</h2>
+                                <p className="inline-block py-[5px] pr-5 pl-[15px] border-l-4 border-[#387ed1] bg-[#f6fafd] rounded-[2px] text-base leading-[1.8] mb-[15px]">
                                     Free for first year*
                                 </p>
-                                <p className="text-12">
+                                <p className="text-xs leading-[1.8] mb-[15px]">
                                     From second year onwards, for BSDA accounts:
                                 </p>
-                                <div className="table-container">
-                                    <table>
-                                        <thead>
+                                <div className="overflow-auto w-full max-w-full">
+                                    <table className='overflow-auto w-full max-w-full'>
+                                        <thead className='table-header-group align-middle border-inherit'>
                                             <tr className='border-b border-[#f4f4f4]'>
-                                                <th>Value of holdings</th>
-                                                <th>AMC</th>
+                                                <th className='first:!pl-[15px] first:border-l-0 text-sm font-medium border-b border-[#ddd] py-3 px-[15px] text-left align-middle'>Value of holdings</th>
+                                                <th className='first:!pl-[15px] first:border-l-0 text-sm font-medium border-b border-[#ddd] py-3 px-[15px] text-left align-middle'>AMC</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr className="border-b border-[#f4f4f4]">
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>Up to ₹4 lakh</td>
-                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="free-tag">free</span></td>
+                                                <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'><span className="uppercase text-[11px] font-medium text-white bg-[#4caf50] py-1 px-[10px] rounded-[2px]">free</span></td>
                                             </tr>
                                             <tr>
                                                 <td className='!border-none text-[0.875rem] py-[12px] px-[15px] text-left'>₹4 lakh - ₹10 lakh</td>
@@ -404,13 +404,13 @@ const Pricing = () => {
                                         </tbody>
                                     </table>
                                 </div>
-                                <p className="text-12">
+                                <p className="text-xs leading-[1.8] mb-[15px]">
                                     For a non-BSDA account, AMC is ₹300 per year + 18% GST, regardless of holdings value, charged quarterly.
                                 </p>
-                                <p className="text-12">
-                                    To learn more about BSDA, <a href="https://support.zerodha.com/category/account-opening/offline-account-opening/bsda/articles/how-to-open-a-basic-service-demat-account-at-zerodha">click here</a>. To learn more about AMC, <a href="https://support.zerodha.com/category/account-opening/charges-at-zerodha/statutory-and-exchange/articles/what-is-the-annual-maintenance-charge">click here</a>.
+                                <p className="text-xs leading-[1.8] mb-[15px]">
+                                    To learn more about BSDA, <a className='text-[#387ed1] no-underline font-medium bg-transparent text-xs' href="https://support.zerodha.com/category/account-opening/offline-account-opening/bsda/articles/how-to-open-a-basic-service-demat-account-at-zerodha">click here</a>. To learn more about AMC, <a className='text-[#387ed1] no-underline font-medium bg-transparent text-xs' href="https://support.zerodha.com/category/account-opening/charges-at-zerodha/statutory-and-exchange/articles/what-is-the-annual-maintenance-charge">click here</a>.
                                 </p>
-                                <p className="text-12">
+                                <p className="text-xs leading-[1.8] mb-[15px]">
                                     *Resident individual accounts only.
                                 </p>
                             </div>
