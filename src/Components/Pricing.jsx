@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
 const Pricing = () => {
     const [activeTab, setActiveTab] = useState("equity");
 
@@ -74,12 +75,12 @@ const Pricing = () => {
                                       px-[35px] pt-0 pb-[5px] text-center text-[1.5rem]
                                      font-medium bg-transparent ${activeTab === "currency" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"}`}>Currency
                                 </button>
-                                 <button onClick={() => setActiveTab ("commodity")}
+                                <button onClick={() => setActiveTab("commodity")}
                                     className={`block min-w-[130px] rounded-t-[3px] border-none
                                       px-[35px] pt-0 pb-[5px] text-center text-[1.5rem]
                                      font-medium bg-transparent ${activeTab === "commodity" ? "border-b-2 border-b-[#387ed1] text-[#666]" : "text-[#387ed1]"}`}> Commodity
 
-                                 </button>
+                                </button>
                             </nav>
 
                             {activeTab === "equity" && (
@@ -167,7 +168,7 @@ const Pricing = () => {
                                             </tbody>
                                         </table>
                                     </div>
-                                    
+
                                 </div>
                             )}
                             {activeTab === "f0" && (
@@ -334,7 +335,7 @@ const Pricing = () => {
                         </div><br />
                         <p className="text-[2.25rem] font-normal mt-0 mb-[20px] text-center text-[1rem] leading-[1.8] mb-[15px]"><a className="font-normal text-[#387ed1] no-underline bg-transparent text-[2.25rem] mt-0 mb-[20px] text-center text-[1rem] leading-[1.8] mb-[15px]" href="/brokerage-calculator">Calculate
                             your costs upfront</a> using our brokerage calculator</p>
-                        <section  className="pt-[80px]">
+                        <section className="pt-[80px]">
                             <div className="relative w-[1100px] max-w-full mx-auto box-border">
                                 <h2 className="text-[1.5rem] leading-[1.5] mt-0 font-medium mb-[20px] text-[#424242]">Charges for account opening</h2>
                                 <div className="overflow-auto w-full max-w-full">
@@ -415,16 +416,16 @@ const Pricing = () => {
                                 </p>
                             </div>
                         </section>
-                        <section className="charges-sections">
-                            <div className="container">
-                                <h2 className="charges-subheadings">Charges for optional value added services</h2>
-                                <div className="table-container">
-                                    <table>
-                                        <thead>
+                        <section className="pt-20">
+                            <div className="relative w-[1100px] max-w-full mx-auto box-border">
+                                <h2 className="text-2xl leading-[1.5] mt-0 mb-5 font-medium">Charges for optional value added services</h2>
+                                <div className="overflow-auto w-full max-w-full">
+                                    <table className='border-spacing-0 w-full rounded-[3px] border border-[#ddd]'>
+                                        <thead className='align-middle border-inherit'>
                                             <tr className="border-b border-[#f4f4f4]">
-                                                <th>Service</th>
-                                                <th>Billing Frequency</th>
-                                                <th>Charges</th>
+                                                <th className='!pl-[15px] border-l-0 py-3 px-[15px] text-left border-b border-[#eee]'>Service</th>
+                                                <th className='!pl-[15px] border-l-0 py-3 px-[15px] text-left border-b border-[#eee]'>Billing Frequency</th>
+                                                <th className='!pl-[15px] border-l-0 py-3 px-[15px] text-left border-b border-[#eee]'>Charges</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -448,92 +449,92 @@ const Pricing = () => {
                                 </div>
                             </div>
                         </section>
-                        <h2 id="charges-explained">Charges explained</h2>
-                        <div className="row between">
-                            <div className="six columns">
-                                <p>Securities/Commodities transaction tax</p>
-                                <p className="text-12">Tax by the government when transacting on the exchanges. Charged as
+                        <h2 className='text-2xl pt-20 leading-[1.5] mt-0 font-medium mb-5 text-[#424242]'>Charges explained</h2>
+                        <div className="flex flex-row flex-wrap flex-[0_1_auto] justify-between box-border">
+                            <div className="box-border flex-[0_1_auto] basis-[48%] w-[48%] ml-0">
+                                <p className='text-base leading-[1.8] mb-[15px]'>Securities/Commodities transaction tax</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Tax by the government when transacting on the exchanges. Charged as
                                     above on both buy and sell sides when trading equity delivery. Charged only on selling side when
                                     trading intraday or on F&amp;O.</p>
-                                <p className="text-12">When trading at Zerodha, STT/CTT can be a lot more than the brokerage
+                                <p className="text-xs leading-[1.8] mb-[15px]">When trading at Zerodha, STT/CTT can be a lot more than the brokerage
                                     we charge. Important to keep a tab.</p>
-                                <p>Transaction/Turnover Charges</p>
-                                <p className="text-12">Charged by exchanges (NSE, BSE, MCX) on the value of your transactions.</p>
-                                <p className="text-12">BSE has revised transaction charges in XC, XD, XT, Z and ZP groups to
+                                <p className='text-base leading-[1.8] mb-[15px]'>Transaction/Turnover Charges</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Charged by exchanges (NSE, BSE, MCX) on the value of your transactions.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">BSE has revised transaction charges in XC, XD, XT, Z and ZP groups to
                                     ₹10,000 per crore w.e.f 01.01.2016. (XC and XD groups have been merged into a new group X w.e.f 01.12.2017)</p>
-                                <p className="text-12">BSE has revised transaction charges in SS and ST groups to ₹1,00,000
+                                <p className="text-xs leading-[1.8] mb-[15px]">BSE has revised transaction charges in SS and ST groups to ₹1,00,000
                                     per crore of gross turnover.</p>
-                                <p className="text-12">BSE has revised transaction charges for group A, B and other non exclusive scrips (non-exclusive scrips from group E, F, FC, G, GC, W, T) at ₹375 per crore of turnover on flat rate basis w.e.f. December 1, 2022.</p>
-                                <p className="text-12">BSE has revised transaction charges in M, MT, TS and MS groups to ₹275 per crore of gross turnover.</p>
-                                <p>Call &amp; trade</p>
-                                <p className="text-12">Additional charges of ₹50 per order for orders placed through a dealer at Zerodha including auto square off orders.</p>
-                                <p>Stamp charges</p>
-                                <p className="text-12">Stamp charges by the Government of India as per the Indian Stamp Act of 1899 for transacting in instruments on the stock exchanges and depositories.</p>
-                                <p>NRI brokerage charges</p>
-                                <ul className="text-12 list-items">
-                                    <li>
+                                <p className="text-xs leading-[1.8] mb-[15px]">BSE has revised transaction charges for group A, B and other non exclusive scrips (non-exclusive scrips from group E, F, FC, G, GC, W, T) at ₹375 per crore of turnover on flat rate basis w.e.f. December 1, 2022.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">BSE has revised transaction charges in M, MT, TS and MS groups to ₹275 per crore of gross turnover.</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Call &amp; trade</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Additional charges of ₹50 per order for orders placed through a dealer at Zerodha including auto square off orders.</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Stamp charges</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Stamp charges by the Government of India as per the Indian Stamp Act of 1899 for transacting in instruments on the stock exchanges and depositories.</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>NRI brokerage charges</p>
+                                <ul className="text-xs leading-[1.8] list-items">
+                                    <li className='mb-[5px]'>
                                         For a non-PIS account, 0.5% or ₹50 per executed order for equity and F&amp;O (whichever is lower).
                                     </li>
-                                    <li>
+                                    <li className='mb-[5px]'>
                                         For a PIS account, 0.5% or ₹200 per executed order for equity (whichever is lower).
                                     </li>
-                                    <li>
+                                    <li className='mb-[5px]'>
                                         ₹500 + GST as yearly account maintenance charges (AMC) charges.
                                     </li>
                                 </ul>
-                                <p>Account with debit balance</p>
-                                <p className="text-12">If the account is in debit balance, any order placed will be charged ₹40 per executed order instead of ₹20 per executed order.</p>
-                                <p>Charges for Investor's Protection Fund Trust (IPFT) by NSE</p>
-                                <ul className="list-items text-12">
+                                <p className='text-base leading-[1.8] mb-[15px]'>Account with debit balance</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">If the account is in debit balance, any order placed will be charged ₹40 per executed order instead of ₹20 per executed order.</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Charges for Investor's Protection Fund Trust (IPFT) by NSE</p>
+                                <ul className="list-items text-xs leading-[1.8]">
                                     <li>Equity and Futures - ₹0.01 per crore + GST of the traded value.</li>
                                     <li>Options - ₹0.01 per crore + GST traded value (premium value).</li>
                                     <li>Currency - ₹0.05 per lakh + GST of turnover for Futures and ₹2 per lakh + GST of premium for Options.</li>
                                 </ul>
-                                <p>Margin Trading Facility (MTF)</p>
-                                <ul className="list-items text-12">
+                                <p className='text-base leading-[1.8] mb-[15px]'>Margin Trading Facility (MTF)</p>
+                                <ul className="list-items text-xs leading-[1.8]">
                                     <li>MTF Interest: 0.04% per day (₹40 per lakh) on the funded amount. The interest is applied from T+1 day until the day MTF stocks are sold.</li>
                                     <li>MTF Brokerage: 0.3% or Rs. 20/executed order, whichever is lower.</li>
                                     <li>MTF pledge charge: ₹15 + GST per pledge and unpledge request per ISIN.</li>
                                 </ul>
                             </div>
-                            <div className="six columns">
-                                <p>GST</p>
-                                <p className="text-12">Tax levied by the government on the services rendered. 18% of (
+                            <div className="basis-[48%] w-[48%] box-border flex-[0_1_auto]">
+                                <p className='text-base leading-[1.8] mb-[15px]'>GST</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Tax levied by the government on the services rendered. 18% of (
                                     brokerage + SEBI charges + transaction charges)</p>
-                                <p>SEBI Charges</p>
-                                <p className="text-12">Charged at ₹10 per crore + GST by Securities and Exchange Board of
+                                <p className='text-base leading-[1.8] mb-[15px]'>SEBI Charges</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Charged at ₹10 per crore + GST by Securities and Exchange Board of
                                     India for regulating the markets.</p>
                                 <p id="depo_charges">DP (Depository participant) charges</p>
-                                <p className="text-12">₹15.34 per scrip (₹3.5 CDSL fee + ₹9.5 Zerodha fee + ₹2.34 GST) is charged on the trading account ledger when stocks are sold, irrespective of quantity.</p>
-                                <p className="text-12">Female demat account holders (as first holder) will enjoy a discount of ₹0.25 per transaction on the CDSL fee.</p>
-                                <p className="text-12">Debit transactions of mutual funds &amp; bonds get an additional discount of ₹0.25 on the CDSL fee.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">₹15.34 per scrip (₹3.5 CDSL fee + ₹9.5 Zerodha fee + ₹2.34 GST) is charged on the trading account ledger when stocks are sold, irrespective of quantity.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Female demat account holders (as first holder) will enjoy a discount of ₹0.25 per transaction on the CDSL fee.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Debit transactions of mutual funds &amp; bonds get an additional discount of ₹0.25 on the CDSL fee.</p>
                                 <p id="depo_charges">Pledging charges</p>
-                                <p className="text-12">₹30 + GST per pledge request per ISIN.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">₹30 + GST per pledge request per ISIN.</p>
                                 <p>AMC (Account maintenance charges)</p>
-                                <p className="text-12">Free for the first year on all new resident individual accounts.</p>
-                                <p className="text-12">For BSDA demat account: Zero charges if the holding value is less than ₹4,00,000. To learn more about BSDA, <a href="https://support.zerodha.com/category/account-opening/offline-account-opening/bsda/articles/how-to-open-a-basic-service-demat-account-at-zerodha">Click here</a></p>
-                                <p className="text-12">For non-BSDA demat accounts: ₹300/year + 18% GST charged quarterly (90 days). To learn more about AMC, <a href="https://support.zerodha.com/category/account-opening/charges-at-zerodha/statutory-and-exchange/articles/what-is-the-annual-maintenance-charge">Click here</a></p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Free for the first year on all new resident individual accounts.</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">For BSDA demat account: Zero charges if the holding value is less than ₹4,00,000. To learn more about BSDA, <a href="https://support.zerodha.com/category/account-opening/offline-account-opening/bsda/articles/how-to-open-a-basic-service-demat-account-at-zerodha">Click here</a></p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">For non-BSDA demat accounts: ₹300/year + 18% GST charged quarterly (90 days). To learn more about AMC, <a href="https://support.zerodha.com/category/account-opening/charges-at-zerodha/statutory-and-exchange/articles/what-is-the-annual-maintenance-charge">Click here</a></p>
                                 <p>Corporate action order charges</p>
-                                <p className="text-12">₹20 plus GST will be charged for OFS / buyback / takeover / delisting
+                                <p className="text-xs leading-[1.8] mb-[15px]">₹20 plus GST will be charged for OFS / buyback / takeover / delisting
                                     orders placed through Console.</p>
-                                <p>Off-market transfer charges</p>
-                                <p className="text-12">₹25 per transaction.</p>
-                                <p>Physical CMR request</p>
-                                <p className="text-12">First CMR request is free. ₹20 + ₹100 (courier charge) +
+                                <p className='text-base leading-[1.8] mb-[15px]'>Off-market transfer charges</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">₹25 per transaction.</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Physical CMR request</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">First CMR request is free. ₹20 + ₹100 (courier charge) +
                                     18% GST for subsequent requests.</p>
-                                <p>Payment gateway charges</p>
-                                <p className="text-12">₹9 + GST (Not levied on transfers done via UPI)</p>
-                                <p>Delayed Payment Charges</p>
-                                <p className="text-12">Interest is levied at 18% a year or 0.05% per day on the debit balance in your trading account. <a href="https://support.zerodha.com/category/console/ledger/articles/interest-charges">Learn more</a>.</p>
-                                <p>Trading using 3-in-1 account with block functionality</p>
-                                <ul className="list-items text-12">
-                                    <li><b>Delivery &amp; MTF Brokerage:</b> 0.5% per executed order.</li>
-                                    <li><b>Intraday Brokerage:</b> 0.05% per executed order.</li>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Payment gateway charges</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">₹9 + GST (Not levied on transfers done via UPI)</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Delayed Payment Charges</p>
+                                <p className="text-xs leading-[1.8] mb-[15px]">Interest is levied at 18% a year or 0.05% per day on the debit balance in your trading account. <a href="https://support.zerodha.com/category/console/ledger/articles/interest-charges">Learn more</a>.</p>
+                                <p className='text-base leading-[1.8] mb-[15px]'>Trading using 3-in-1 account with block functionality</p>
+                                <ul className="list-items text-xs leading-[1.8] mb-[15px]">
+                                    <li className='mb-[5px]'><b>Delivery &amp; MTF Brokerage:</b> 0.5% per executed order.</li>
+                                    <li className='mb-[5px]'><b>Intraday Brokerage:</b> 0.05% per executed order.</li>
                                 </ul>
                             </div>
                         </div>
-                        <p>Disclaimer</p>
-                        <p className="text-12">
+                        <p className='text-base leading-[1.8] mb-[15px]'>Disclaimer</p>
+                        <p className="text-xs leading-[1.8] mb-[15px]">
                             For Delivery based trades, a minimum of ₹0.01 will be charged per contract note.
                             Clients who opt to receive physical contract notes will be charged ₹20 per contract note plus courier
                             charges.
@@ -546,6 +547,146 @@ const Pricing = () => {
                     </div>
                 </section>
             </main>
+            <footer className='bg-[#fbfbfb] p-4  border-[#eee] '>
+                <div className='relative w-full max-w-[1100px] mx-auto box-border'>
+                    <div className='flex flex-row flex-wrap justify-between text-sm grow-0 shrink basis-auto box-border'>
+                        <div className='basis-[22%] w-[22%] grow-0 shrink box-border first:ml-0'>
+                            <div className=' logo py-[10px]'>
+                                <img src="/logo.svg" alt="logo" className='h-[25px]' />
+                            </div>
+                            <p className="copyright text-grey m-0 text-[0.8rem] text-[#666] block my-4 mx-0 leading-[1.8]">© 2010 - 2026, Zerodha Broking Ltd.</p>
+                            <p className="copyright text-grey m-0 text-[0.8rem] text-[#666] block my-4 mx-0 leading-[1.8]">All rights reserved.</p>
+                            <ul className='text-[#424242] list-none m-0 mt-[15px] p-0 text-sm flex gap-4 '>
+                                <li>
+                                    <a href="https://x.com/zerodha" target="_blank" rel="noopener noreferrer" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><img src="x-twitter.svg" alt="x" /></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://facebook.com/zerodha.social" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaFacebook /></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://instagram.com/zerodhaonline/" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaInstagram /></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://linkedin.com/company/zerodha" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none'><FaLinkedin />
+                                    </a>
+                                </li>
+                            </ul>
+                            <hr className='border-0 border-t border-[#eee] h-0 overflow-visible text-sm' />
+                            <ul className='text-[#424242] list-none m-0 mt-[15px] p-0 text-sm flex gap-4 '>
+                                <li>
+                                    <a target="_blank" href="https://www.youtube.com/@zerodhaonline">
+                                        <img className="youtube-logo" src="https://zerodha.com/static/images/youtube.svg" alt="" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://whatsapp.com/channel/0029Va8tzF0EquiIIb9j791g">
+                                        <img src="/whatsapp-logo.svg" className='w-5 h-5' alt="whatsapp" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" className='no-underline bg-transparent text-[#666] font-normal text-xl leading-none ' href="https://t.me/zerodhain"><FaTelegram /></a>
+                                </li>
+                            </ul>
+                            <div className='mt-5 flex gap-[10px] text-[0.875rem]'>
+                                <a target="_blank" className='' href="https://play.google.com/store/apps/details?id=com.zerodha.kite3">
+                                    <img src="https://zerodha.com/static/images/google-play-badge-light.svg" alt="Get it on Google Play" />
+                                </a>
+                                <a target="_blank" href="https://apps.apple.com/in/app/kite-zerodha/id1449453802">
+                                    <img src="https://zerodha.com/static/images/appstore-badge-light.svg" alt="Download on the App Store" />
+                                </a>
+                            </div>
+                        </div>
+                        <div className='basis-[74%] w-[74%] box-border flex-[0_1_auto]  '>
+                            <div className='flex flex-row flex-wrap justify-between box-border flex-[0_1_auto]  '>
+                                <div className='basis-[22%] w-[22%] box-border flex-[0_1_auto]  '>
+                                    <ul className='list-none m-0 p-0  '>
+                                        <li className='text-lg font-medium mb-[10px] '>Account</li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/open-account/">Open demat account</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/open-account/minor/">Minor demat account</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/open-account/nri/">NRI demat account</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/open-account/huf/">HUF demat account</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/commodities/">Commodity</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/dematerialise/">Dematerialisation</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/fund-transfer/">Fund transfer</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/mtf/">MTF</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                                    <ul className='list-none m-0 p-0'>
+                                        <li className='text-lg font-medium mb-[10px]'>Support</li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/contact/">Contact us</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://support.zerodha.com">Support portal</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a target="_blank" href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/how-do-i-create-a-ticket-at-zerodha">How to file a complaint?</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a target="_blank" href="https://support.zerodha.com/category/your-zerodha-account/your-profile/ticket-creation/articles/track-complaints-or-tickets">Status of your complaints</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/marketintel/bulletin/">Bulletin</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/marketintel/circulars/">Circular</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/z-connect/">Z-Connect blog</a>
+                                        </li>
+                                        <li className='mb-[10px]'>
+                                            <a href="https://zerodha.com/resources/">Downloads</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                                    <ul className='list-none m-0 p-0'>
+                                        <li className='text-lg font-medium mb-[10px]'>Company</li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/about/">About</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/about/philosophy/">Philosophy</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/media/">Press &amp; media</a></li>
+                                        <li className='mb-[10px]'><a href="https://careers.zerodha.com/">Careers</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/cares/">Zerodha Cares (CSR)</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.tech/">Zerodha.tech</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/open-source/">Open source</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/refer/">Referral program</a></li>
+                                    </ul>
+                                </div>
+                                <div className='basis-[20%] w-[20%] box-border flex-[0_1_auto]'>
+                                    <ul className='list-none m-0 p-0'>
+                                        <li className='text-lg font-medium mb-[10px]'>Quick links</li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/ipo/">Upcoming IPOs</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/charges/">Brokerage charges</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/marketintel/holiday-calendar/">Market holidays</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/markets/calendar/">Economic calendar</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/calculators/">Calculators</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/markets/stocks/">Markets</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/markets/sector/">Sectors</a></li>
+                                        <li className='mb-[10px]'><a href="https://zerodha.com/market/giftnifty/">Gift Nifty</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </>
     )
 }
