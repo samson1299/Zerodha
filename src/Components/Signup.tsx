@@ -96,9 +96,9 @@ const Signup = () => {
                     <input className="[font-family:inherit] text-[100%] leading-[1.15] m-0" type="hidden" name="partner_id" id="user_id" value="" ></input>
                   </div>
                   <div className="mt-[30px]">
-                    <button className="relative m-4 hover:bg-black transition-colors duration-300 px-[30px] py-[10px] bg-[#387ed1] text-white text-center text-[1.2em] leading-[1.2em] font-medium no-underline whitespace-nowrap rounded-[3px] border border-transparent cursor-pointer box-border appearance-auto w-[260px] h-[54px] mb-[20px]" type="submit" id="open_account_proceed_form">
+                    < Link to="/otp" className="relative m-4 hover:bg-black transition-colors duration-300 px-[30px] py-[10px] bg-[#387ed1] text-white text-center text-[1.2em] leading-[1.2em] font-medium no-underline whitespace-nowrap rounded-[3px] border border-transparent cursor-pointer box-border appearance-auto w-[260px] h-[54px] mb-[20px]" type="submit" id="open_account_proceed_form">
                       Get OTP
-                    </button>
+                    </Link>
                   </div>
                 </form>
                 <p className="text-grey text-xs leading-[1.8]  mb-[15px] ">
