@@ -1,7 +1,36 @@
 import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
+const [mobile, setMobile] = useState("");
+const [error, setError] = useState("");
+const [loading, setLoading] = useState(false);
+const navigate = useNavigate();
+const handleGetOtp = async () =>{
+if (!/^\d{10}$/.test(mobile)){
+  setError("Please enter a valid 110-digit mobile number");
+  return;
+}
+setLoading(true);
+setError("");
 
+try{
+  const res = await fetch("http://localhost:5000/api/otp/send",{
+    method:"POST",
+    headers:{"Content-Type" : "application/json"},
+    body:JSON.stringify({phone : `+91${mobile}`}),
+  });
+  const data = await res.json();
+  if(!res.ok) throw new Error(data.error || "Failed to send OTP");
+  
+  navigate("/otp", {state:{phone :`+91${mobile}`}});
+}catch(err){
+  setError(err.message);
+}finally{
+  setLoading(false);
+}
+};
   return (
     <>
       <nav className="fixed top-0 z-10 w-full block perspective-[600px] box-border bg-white shadow-[2px_1px_2px_#eee]">
@@ -90,15 +119,15 @@ const Signup = () => {
                       <span className="hidden absolute w-[170px] text-[14px] p-[10px] bg-white border border-[#e1e1e1] rounded-[3px] top-[60px] left-[2px]">NRI account? <a className="text-[#387ed1] no-underline font-medium bg-transparent" href="https://zerodha.com/open-account/nri/">Click here</a>
                       </span>
                     </span>
-                    <input type="tel" className="w-full text-[1.2em] leading-[1.2em] h-[57px] pl-[105px] p-[10px] mb-0 bg-white border border-[#d1d1d1] rounded-[2px] shadow-none box-border appearance-none outline-none" min="1000000000" max="9999999999" name="mobile" id="user_mobile" placeholder="Enter your mobile number"></input>
+                    <input type="tel" value={mobile} onChange={(e) => setMobile(e.target.value.replace(/\D/g,"").slice(0,10))} className="w-full text-[1.2em] leading-[1.2em] h-[57px] pl-[105px] p-[10px] mb-0 bg-white border border-[#d1d1d1] rounded-[2px] shadow-none box-border appearance-none outline-none" min="1000000000" max="9999999999" name="mobile" id="user_mobile" placeholder="Enter your mobile number"></input>
                     <p className="mt-[5px] hidden text-[0.75rem] leading-[1.8] mb-[15px] text-[#f6461a]"></p>
                     <input className="font-inherit text-[100%] leading-[1.15] m-0" type="hidden" name="source" id="user_source" value="zerodha"></input>
                     <input className="[font-family:inherit] text-[100%] leading-[1.15] m-0" type="hidden" name="partner_id" id="user_id" value="" ></input>
                   </div>
                   <div className="mt-[30px]">
-                    < Link to="/otp" className="relative m-4 hover:bg-black transition-colors duration-300 px-[30px] py-[10px] bg-[#387ed1] text-white text-center text-[1.2em] leading-[1.2em] font-medium no-underline whitespace-nowrap rounded-[3px] border border-transparent cursor-pointer box-border appearance-auto w-[260px] h-[54px] mb-[20px]" type="submit" id="open_account_proceed_form">
-                      Get OTP
-                    </Link>
+                    < button  onClick={handleGetOtp} disabled ={loading}  className="relative m-4 hover:bg-black transition-colors duration-300 px-[30px] py-[10px] bg-[#387ed1] text-white text-center text-[1.2em] leading-[1.2em] font-medium no-underline whitespace-nowrap rounded-[3px] border border-transparent cursor-pointer box-border appearance-auto w-[260px] h-[54px] mb-[20px]" type="button" >
+                      {loading? "sending OTP..." : "GET OTP"} 
+                    </button>
                   </div>
                 </form>
                 <p className="text-grey text-xs leading-[1.8]  mb-[15px] ">
